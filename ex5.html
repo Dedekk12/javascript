@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+    <style>
+        li
+            {
+                float: left;
+            }
+
+    </style>
+<body>
+    <button onclick="add()"> b_d </button>
+    <ul>
+        <li>1</li>
+
+
+    </ul>
+
+    <script>
+            
+            let lista = document.querySelector('ul')
+            let contador = 2;
+        function add() {
+            contador ++;
+            
+            let li = document.createElement("li");
+            li.innerText = contador;
+            li.style.color = 'rgb(' + Math.random() * 255 + ',' + Math.random() * 255 + ',' + Math.random() * 255;
+            li.style.fontSize = 1 + Math.random() * 100 + 'px';
+
+            lista.appendChild(li);
+            
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    
+    <h1>0</h1>
+    <button onclick="Adc()"> O.O </button>
+    <button onclick="Fdc()"> ^-^ </button>
+    <script>
+        let h1 = document.querySelector('h1')
+        function Adc() {
+            h1.innerText ++
+             h1.style.color = 'rgb(' + Math.random() * 255 + ',' + Math.random() * 255 + ',' + Math.random() * 255;
+        }
+        function Fdc() {
+            h1.innerText = 0
+        }
+
+    </script>
+</body>
+</html>
